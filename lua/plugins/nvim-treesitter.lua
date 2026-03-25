@@ -1,0 +1,40 @@
+return {
+  {
+    "nvim-treesitter/nvim-treesitter",
+    branch = "main",
+    version = false,
+    dependencies = {
+      "RRethy/nvim-treesitter-endwise",
+      "nvim-treesitter/nvim-treesitter-textobjects",
+    },
+
+    opts = {
+      highlight = { enable = true },
+      indent = { enable = true },
+      folds = { enable = true },
+      autoinstall = true,
+      ensure_installed = {
+        "bash",
+        "c",
+        "cpp",
+        "css",
+        "dockerfile",
+        "html",
+        "java",
+        "javascript",
+        "json",
+        "lua",
+        "markdown",
+        "markdown_inline",
+        "python",
+        "ruby",
+        "scss",
+        "solidity",
+        "tsx",
+        "typescript",
+        "vim",
+        "yaml",
+      },
+    },
+  },
+}
